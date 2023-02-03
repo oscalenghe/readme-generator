@@ -42,7 +42,6 @@ let readmeWrapper = (data) =>
   
   If you have any questions, you can contact me via the information below.
 
-  // TODO: Add link to github with username 
   * Email: ${data.email}
   * Github: https://github.com/${data.github}
 }}`;
