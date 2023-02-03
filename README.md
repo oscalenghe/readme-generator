@@ -1,19 +1,9 @@
 # Node.JS README Generator
 
 
-
-  ## Table of Contents
+## Description
   
-  - [Description](#Description)
-  - [Installation](#Installation)
-  - [Usage](#Usage)
-  - [License](#License)
-  - [Contributing](#Contribution)
-  - [Questions](#questions)
-
-  ## Description
-  
-  This application was created in order to quickly generate a README.md file within a project. When node start is ran, the terminal will prompt the user with questions that ask for the title, description, installation, usage, license, contribution, email and github username. 
+This application was created in order to quickly generate a README.md file within a project. When node start is ran, the terminal will prompt the user with questions that ask for the title, description, installation, usage, license, contribution, email and github username. 
   
   ## Installation
   
@@ -27,5 +17,4 @@
 
   NA
   
-  ## Contribution
   
