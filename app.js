@@ -1,4 +1,4 @@
-const inquirer = import('inquirer')
+const inquirer = require('inquirer');
 
 const questions = [
     {
@@ -41,3 +41,16 @@ const questions = [
                 }
     }
 ]
+
+function runQuery() {
+    return inquirer.prompt(questions)
+    .then((answers)=>{
+        console.log(answers)
+        return answers
+    })
+    .catch((error)=>{
+        console.log(error)
+    })
+}
+
+runQuery();
