@@ -1,4 +1,54 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
+
+
+
+
+let readmeWrapper = (data) =>
+ `function generateMarkdown(data) {
+    return '# ${data.title}
+
+  ${licenseGenerator.checkLicense(data.license)}
+
+  ## Table of Contents
+  
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [License](#License)
+  - [Contributing](#Contribution)
+  - [Questions](#questions)
+
+  ## Description
+  
+  ${data.description}
+  
+  ## Installation
+  
+  ${data.installation}
+
+  ## Usage
+
+  ${data.usage}
+  
+  ## License
+
+ ${licenseGenerator.licenseContent(data.license)}
+  
+  ## Contribution
+  
+  ${data.contribute}
+  
+  ## Questions
+  
+  If you have any questions, you can contact me via the information below.
+
+  // TODO: Add link to github with username 
+  * Email: ${data.email}';
+  * Github: https://github.com/${data.github}
+}`;
+
+
 
 const questions = [
     {
