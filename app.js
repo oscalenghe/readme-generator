@@ -95,7 +95,7 @@ inquirer.prompt([
    const userInput = readmeWrapper(answers)
 
 
-fs.writeFile('README.md', userInput, (err) =>
+fs.writeFile('gREADME.md', userInput, (err) =>
   err ? console.error(err) : console.log('Success!')
 ); 
 })
